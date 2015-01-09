@@ -1,0 +1,234 @@
+.navbar-default {
+	background-color: #000000;
+	border-color: #7f7e7e;
+}
+.navbar-default .navbar-brand {
+	color: #ffffff;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #ecdbff;
+}
+.navbar-default .navbar-text {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #ecdbff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #ecdbff;
+	background-color: #7f7e7e;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #ecdbff;
+	background-color: #7f7e7e;
+}
+.navbar-default .navbar-toggle {
+	border-color: #7f7e7e;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #7f7e7e;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+	color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+	color: #ecdbff;
+}
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #ffffff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #ecdbff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #ecdbff;
+		background-color: #7f7e7e;
+	}
+}
+
+.timeline {
+	text-align:left;
+}
+
+.jumbotron {
+
+/*padding:auto;
+margin:auto;*/
+/*background: #000000;*/
+/*width: 25%;*/
+background: rgba(200, 54, 54, 0.5); 
+
+
+}
+
+.fontcolor {
+	color: white;
+}
+
+.rates {
+	width: 75%;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.stylisttitle {
+	background: #EDEDED;
+/*	padding-top:10px;
+	width:89%;
+	height:125px;*/
+
+}
+
+.stylistcontainer {
+	width:89% ;
+}
+
+.specialoffercontainer {
+	width:75%;
+	padding-top:10px;
+	padding-bottom:30px;
+}
+
+.contactcontainer {
+	padding-top:10px;
+	width:75%;
+}
+
+.leftaligncenter {
+	padding: auto;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Poiret One', cursive;
+	
+}
+
+.lefttext {
+	text-align: center;
+}
+
+.leftalignfontmod {
+	font-size: 50%;
+}
+
+.centervid {
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Poiret One', cursive;
+}
+
+h2 {
+font-size:800%;
+text-align: center;
+}
+
+.login {
+	font-family: 'Dosis', sans-serif;;
+}
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+.pcenter {
+	padding:auto;
+	margin:auto;
+	text-align:center;
+	font-family: 'Dosis', sans-serif;;
+}
+
+.centericons {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.book {
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+#dashboard {
+	text-align: left;
+}
+
+#wrap {
+	word-wrap: break-word;
+}
+
+#bold {
+	font-weight: bold;
+}
+
+/*.create {
+	padding: auto;
+	margin-left: 35%;
+	margin-right: auto;
+	text-align: left;
+	font-family: 'Poiret One', cursive;
+	width:50%;
+
+	display: block;
+	float: none;
+}*/
+
+
+
+#map-canvas {
+	padding:auto;
+	margin:auto;
+	text-align:center;
+}
+
+.navbar .nav{
+    float: none;
+    text-align: center;
+    padding-right: 125px;
+}
+.navbar .nav > li{
+    float: none;
+    display: inline-block;
+}
+
+#parent {
+position: absolute;
+  height: 50%;  /*Set your own height: percents, ems, whatever! */
+/*  width: 20%;*/   /*Set your own width: percents, ems, whatever! */
+  text-align:center;
+  /*overflow: auto;*/ /* Recommended in case content is larger than the container */
+  margin: auto; /* Center the item vertically & horizontally */
+  position: absolute; /* Break it out of the regular flow */
+  top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
+}
+
+
+.displayed {
+
+
+	max-height:100%;
+	max-width:100%;
+
+
+/*	display: block;
+
+    margin-left: auto;
+    margin-right: auto;*/
+
+}
+

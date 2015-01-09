@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Printing out the Tab Searches and Displaying the Tabs</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<h1>Printing out the Tab Searches <br>
+		and Displaying the Tabs</h1>
+
+		<h3>Printing out the Tab:</h3>
+		<p>In this section, we will learn how to print out the tabs for our user to choose from.  We previously stored our HTML data to <br>
+		be displayed in an array called $storedata and all of the urls associated with each value from $storedata in an array called <br>
+		$taburlarray.  Now we must print the tab searches to the screen so that the user can choose one to his liking.  This will be <br>
+		accomplished by echoing each value in our array $storedata but before we do that, there must be some error handling that we need <br>
+		to take care of beforehand.  If the total results summed up from all of the pages is less than the chosen "maximum number per page"<br>
+		 value specified by the user, we need to make sure there isn't any extraneous data outputted.  To handle this, we write an if <br>
+		 statement that says if the total count is less than the maximum number of tabs per page, then the results that will be printed <br>
+		 will be equal to the total count and not to the per page value set by the user.  <br>
+		 The sample code is: if($totalcount &lt; $perpage){$resultsprint = $totalcount;}.  If this is not the case, then the results to print will<br>
+		  be set to the per page amount and that amount of data will be outputted.  After this error handling, we are free to echo our storeddata<br>
+		   up to our specified amount.  To output all of the data, simple substitute the value summed from all the pages earlier with "results <br>
+		   to print" value.  In my code, I chose to add a submit button that opens a new window to the associated url of the particular $storeddata index.</p>
+
+		<h3>Conclusion</h3>
+		<p>I hope you get a lot out of this documentation and choose to make a lot of guitar players<br>
+		 happy with whatever you choose to do with this information. Rock on.</p>
+
+		<a href="page7.html"><h3>Previous: Processing Tabs for our Application</h3></a>
+		<a href="tableofcontents.html"><h3>Table of Contents</h3></a>
+		<a href="index.html"><h3>Back to Guitar Tab Generator</h3></a>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

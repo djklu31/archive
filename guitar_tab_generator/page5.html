@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Searching for Tabs</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<h1>Searching for Tabs</h1>
+
+		<h3>When the Submit Button is Hit:</h3>
+		<p>When the submit button is hit from the search form HTML page, the PHP should be notified that the button was set.<br>
+		  This can be done using an if statement with "if(isset($_REQUEST['search'])){}" (given that search is the name if <br>
+		  the submit button in the HTML form).  Within this if statement, we set the POST values received by the PHP portion <br>
+		  sent from the HTML form.  Because our API handles GET requests, we need to format our artist and song information <br>
+		  to cater to this specification.  An issue that we could run into is handling spaces for the artist and song title.  <br>
+		  Therefore, we need to replace spaces in both the artist and song name with a "+" symbol in order to properly use our API.</p>
+
+		<h3>Handling Spaces in the Artist and Song Name:</h3>
+		<p>As we mentioned, we need to handle spaces from our POST artist and song names retrieved from the HTML form page <br>
+		in order for our API to properly process these search values.  We do this by using the str_replace() function.  As an<br>
+		 example from my PHP implementation, I set the $artist variable in my PHP to str_replace(" ", "+", $_POST['artist']);<br>
+		   This will replace any space found with a plus symbol in our POST request for artist.  The same concept will be applied<br>
+		    to the song name in case there are any spaces in them (eg. song name: "The Great Gig in The Sky").  After handling <br>
+		    the POST values for the artist and the song name, we need to take in the requested "maximum number of tabs to be <br>
+		    shown on the screen".  This will simply be stored as an integer with the code (int)$_POST['perpage'];. In my coding <br>
+		    example, this will be set to $perpage while artist and song are set to $artist and $song respectively.</p>
+
+		<h3>Getting Tabs:</h3>
+		<p>Next, we will get into the retrieving tabs from our API.  First, we will create a string that will be concatenated to<br>
+		 the end of the API url in the value= portion (explained in the previous section).  In my code example, this was done by<br>
+		  creating a $searchvalues variable that contained the artist string concatenated with a "+" symbol which is then concatenated <br>
+		  to the song name.  In my code, this is shown as $searchvalues = $artistrequest . "+" . $song request;.  As stated, <br>
+		  $searchvalues is then tacked on to the end of the url where we will get our tabs from.  My coding example shows this <br>
+		  as: $url = "http://app.ultimate-guitar.com/search.php?search_type=title&amp;page=$sitepage&amp;iphone=1&amp;value=$searchvalues";. </p>
+
+		<a href="page6.html"><h2>Next: Handling the Requested XML</h2></a>
+		<a href="page4.html"><h3>Previous: The Ultimate-Guitar Unofficial "API" Explained</h3></a>
+		<a href="tableofcontents.html"><h3>Table of Contents</h3></a>
+		<a href="index.html"><h3>Back to Guitar Tab Generator</h3></a>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

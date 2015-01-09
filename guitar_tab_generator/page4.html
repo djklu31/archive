@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Ultimate-Guitar Unofficial "API" Explained</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+
+		<h1>The Ultimate-Guitar Unofficial "API" Explained</h1>
+
+		<p>The Ultimate-Guitar tab database can be accessed via GET <br>
+		requests via the URL: http://app.ultimate-guitar.com/search.php.<br>
+		  Actual tablature can be obtained at http://app.ultimate-guitar.com/iphone/tab.php.</p>
+
+		<h2>Searching for Tabs Using the Search URL </h2>
+		<h2>(http://app.ultimate-guitar.com/search.php):</h2>
+		<p>Individual tabs can be searched for via GET requests to http://app.ultimate-guitar.com/search.php.<br>
+		  GET request variables are as follows:<br>
+		<br>
+		search_type : The value of this variable should always be set to title. <br>
+		The extended functionalities of this variable are unknown.<br>
+		<br>
+		page : This variable indicates the current page of the tab database (numerical value).<br>
+		  Tabs are stored in a span of pages with a random count of results per page (the purpose of this random count is unknown).<br>
+		   To obtain all tab information for searches, all of these pages must be traversed with all tab <br>
+		   information being saved in the process.  The maximum number of pages per search is indicated <br>
+		   in the XML file with the variable "pages" which is explained below.<br>
+		   <br>
+		iphone :  This variable specifies how the tab searches and actual tabs will be presented.  <br>
+		A value of 1 will allow us to pull XML information for both the tab searches and actual tabs.<br>
+		  A value of anything else will bring us to the actual Ultimate-Guitar website which is not what we want.<br>
+		value :  This variable will allow us to request information about both an artist and the song requested.<br>
+		  The value of this variable are either an artist, a song, or both separated by a "+" symbol. <br>
+		  Note: Make sure all of the spaces for artist and song names are replaced by a "+" to ensure proper GET functionality.  <br>
+		  <br>
+		As an example, if we wanted to search for the song "Time" by "Pink Floyd", we would set search_type to it's default <br>
+		which is title, page to the starting value 1 (can be changed incrementally to see more tabs), iphone to 1 which will <br>
+		allow us to obtain XML information value to "pink+floyd+time". <br>
+		The URL will therefore become: http://app.ultimate-guitar.com/search.php?search_type=title&amp;page=1&amp;iphone=1&amp;value=pink+floyd+time.</p><br>
+
+
+		<h2>XML File Variables</h2>
+		<p>The XML file that we obtain through a GET request to the search URL will feature a few key variables.  <br>
+		These variables are listed below:</p>
+
+		<h3>Root Node:</h3>
+		<p>
+		count : The amount of tabs listed for that particular page.<br>
+		page : The current page of tablature being viewed.<br>
+		pages : The last page of tab information available.<br>
+		total and total_found : The number of unique songs on the particular page.<br>
+		bands_found : The number of unique bands found for the total search.<br>
+		<br>
+		Super handy note: To search for values in the root node of the XML, use the syntax $xml['pages'] or $xml['count'] <br>
+		to access pages and count respectively.  Again, for every variable in the root node that you want to access, <br>
+		use that particular syntax.  It could save you a ton of time.</p>
+
+		<h3>Result Node:</h3>
+		<p>
+		name : The song name.<br>
+		artist : The artist name.<br>
+		version : The unique version of the tab.<br>
+		url : The URL of the actual tablature.<br>
+		rating : The rating out of 5 set by Ultimate-Guitar users for the quality of the tab.<br>
+		type : Specifies the type of tablatures.  This could be values such as guitar, bass, solo, indicating what the tablature entails.<br>
+		<br>
+		Super handy note: To search extended nodes within the XML DOM structure, use the syntax $artist = $xml->result[$y]['variablerequested'] <br>
+		where $y is the index of the particular result node (think of it like an array where a number will represent that numbered result node down the XML tree).  </p>
+
+	
+
+		<h3>Accessing Tabs Via ID (http://app.ultimate-guitar.com/iphone/tab.php):</h3>
+		<p>Tabs can be accessed by specifying a numerical value in the "id" GET variable.  For example, if a tab has the URL id of 1135979, <br>
+		we will get the URL: http://app.ultimate-guitar.com/iphone/tab.php?id=1135979 via a GET request, <br>
+		which is a song by the band "Periphery" with the song "Buttersnips".</p>
+
+
+		<a href="page5.html"><h2>Next: Searching for Tabs</h2></a>
+		<a href="page3.html"><h3>Previous: PHP Implementation: Getting Started</h3></a>
+		<a href="tableofcontents.html"><h3>Table of Contents</h3></a>
+		<a href="index.html"><h3>Back to Guitar Tab Generator</h3></a>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

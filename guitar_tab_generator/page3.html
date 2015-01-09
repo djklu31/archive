@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PHP Implementation: Getting Started</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<h1>PHP Implementation: </h1>
+		<h1>Getting Started</h1>
+
+		<h3>Before we start:</h3>
+		<p>Now, we will delve into the PHP portion of our implementation.  Firstly, we will handle <br>
+		what happens when the "Submit" button is hit.  Conceptually, for the PHP implementation <br>
+		that will be presented, we want to think about handling a few features before we start coding.<br>
+		  For tab generation, we want to give feedback to the user after the submit button is hit <br>
+		  to let them know to wait a few moments.  This is because it takes a few seconds XML to <br>
+		  be parsed when there are potentially hundreds of tab entries (eg. The Beatles).  We will <br>
+		  go into this XML retrieval and processing later on.  For this example, when the submit <br>
+		  button is hit, I want the artist, song, tab version, and tab rating (out of 5) to be <br>
+		  printed out.  In addition, I want to have a button next to every tab selection where <br>
+		  the user could have the tab pop-up in a new window when clicked.</p>
+
+		<h3>Sessions:</h3>
+		<p>The first thing that I did when implementing the PHP portion was to start a new session.<br>
+		  The sole reason for this is because I didn't want to pass a bunch of parameters from moving<br>
+		   from function to function.  Storing key-value pairs in the SESSION array allows me <br>
+		   to reference values from any function (similar to global variables without the downsides).  <br>
+		   This is entirely optional as there are other ways of passing parameters and saving/retrieving values <br>
+		   throughout the code. The way I started my session was by simply declaring: session_start(); in the PHP section.<br>
+		      In my code, I added this even before the HTML search for portion: <br>
+		<p>&lt;?php<br>
+		session_start();<br>
+		?&gt;</p>
+
+		<a href="page4.html"><h2>Next: The Ultimate-Guitar Unofficial "API" Explained</h2></a>
+		<a href="page2.html"><h3>Previous: Creating a Search Form with HTML</h3></a>
+		<a href="tableofcontents.html"><h3>Table of Contents</h3></a>
+		<a href="index.html"><h3>Back to Guitar Tab Generator</h3></a>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

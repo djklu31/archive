@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Processing Tabs for our Application</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<h1>Processing Tabs for our Application</h1>
+
+		<h3>Saving all of the Tab Data:</h3>
+		<p>Now that we have saved all of our url pages that contain tab data, we will go to each of those url pages to <br>
+		pull tab information from.  We will achieve this by loading every page into an xml file like we did earlier, <br>
+		keep track of the total number of tabs on each page (different for each page for some odd reason) and sum them <br>
+		(we will use this number later on to print out all the tabs using this number as individual indices for an array),<br>
+		 and store the values that we want for each tab value on each page by using the (int)$xml['count']; call for each <br>
+		 page (whew that was a long sentence).  We will store all of the wanted of each tab in a huge array that will be <br>
+		 parsed to output as HTML data later on.  In our example, this is achieved by storing all the data in an array <br>
+		 called $storedata[$y] and setting it equal to <br>
+		 "&lt;div&gt;   Artist: $artist&lt;/div&gt;&lt;div&gt;   Song: $song&lt;/div&gt;&lt;div&gt;   Type: $type&lt;/div&gt;&lt;div&gt;<br>
+		    Version: $version&lt;/div&gt;&lt;div&gt;   Tab Rating: $tabrating&lt;/div&gt;";.<br>
+		   In addition to storing all the wanted pieces in an array, we will also want to store the individual urls for <br>
+		   each tab with the same indices as according to the tab pair in $storedata[$y].  This will allow us to pull <br>
+		   the actual tab up for the user after everything is printed. We will go over this in the next section.</p>
+
+
+		<a href="page8.html"><h2>Next: Printing out the Tab Searches <br>
+		and Displaying the Tabs</h2></a>
+		<a href="page6.html"><h3>Previous: Handling the Requested XML</h3></a>
+		<a href="tableofcontents.html"><h3>Table of Contents</h3></a>
+		<a href="index.html"><h3>Back to Guitar Tab Generator</h3></a>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

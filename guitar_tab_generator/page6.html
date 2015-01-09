@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Handling the Requested XML</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<h1>Handling the Requested XML</h1>
+
+		<h3>Getting the XML from the URL:</h3>
+		<p>To get the XML file from the url store in $url, we go the SimpleXML method by calling simplexml_load_file($url);.  <br>
+		We set this function to a variable (in our case $xml) and now the xml from the url is stored in a variable.</p>
+
+		<h3>Traversing the XML to retrieve key values:</h3>
+		<p>This was the hardest part of my code implementation and may take some trial and error.  Basically, we can to traverse<br>
+		 the XML file that we retrieve to obtain key values.  In this stage of our implementation, it is key that we request <br>
+		 the number of tab pages and the total count of tabs per page so that we can traverse all of the site pages and add all<br>
+		  of the available tabs to our application (this will be relevant later on).  To request the number of site pages in our<br>
+		   API, we can set a variable $pagecount to (int)$xml['pages'];.  This code will look in the attributes section of the <br>
+		   xml where the value is pages and give us a value converted to an integer.  The same will be done to count.  Again, it<br>
+		    is important to get these values because the way that the API is set up is that there are tabs spanned out on multiple<br>
+		     pages with a different number of tabs for each page. As a result, we need to save these numbers to traverse all of <br>
+		     those pages so that we can obtain all of the tabs from the database.  In addition, the count value is important because<br>
+		      at this point, it allows us to specify to the user if any tabs were found or not.  If count is zero, then the user <br>
+		      can be notified something along the lines of "No tabs found.".  If tabs are found, we will save all of the different <br>
+		      URL's for each page of tabs if necessary.  This will be implemented using a for loop starting at one up to and equal <br>
+		      to the last page number retrieved from (int)$xml['pages'].  The for loop will save all of these URL's in an array <br>
+		      (in our case called $urlarray[$x]) where the page value will increase by one for every iteration.  The for loop in <br>
+		      our case is: for($x=1; $x&lt;=$pagecount; $x++){<br>
+    	$urlarray[$x] = "http://app.ultimate-guitar.com/search.php?search_type=title&amp;page=$x&amp;iphone=1&amp;value=$searchvalues";}.</p>
+
+
+		<a href="page7.html"><h2>Next: Processing Tabs for our Application</h2></a>
+		<a href="page5.html"><h3>Previous: Searching for Tabs</h3></a>
+		<a href="tableofcontents.html"><h3>Table of Contents</h3></a>
+		<a href="index.html"><h3>Back to Guitar Tab Generator</h3></a>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

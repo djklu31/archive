@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Creating a Search Form with HTML</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<h1>Creating a Search Form (HTML)</h1>
+
+		<p>Firstly, we will create a search form which will send data that we want <br>
+		to request to the PHP down the line.  This area is very open to interpretation <br>
+		but for documentation we will create a simple form with fields to search for <br>
+		an artist, song and the maximum number of tabs to be shown on the page.  <br>
+		Because this documentation will hone in on focusing on the tab generation <br>
+		portion of the project, we won't go through the specifics of the simple HTML <br>
+		involved.  What will be important down the line for our example will be the values <br>
+		that will be sent to the PHP when the submit button is hit.  As a result, <br>
+		I'll go over my simple form code briefly.</p>
+
+		<h3>My Sample Form Code:</h3>
+
+		<p>&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"<br>
+&gt;<br>
+&lt;head&gt;<br>
+	&lt;meta charset="utf-8"&gt;<br>
+    &lt;script type="text/javascript"&gt;<br>
+                function openWin(url)<br>
+                {<br>
+                    window.open(url, "mywin", "menubar=0, resizable=0, width=800, height=1000")<br>
+                }<br>
+    &lt;/script&gt;<br>
+	&lt;title&gt;Guitar Tab Generator&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+
+&lt;body&gt;<br>
+	&lt;h1&gt;Generate a Guitar Tab&lt;/h1&gt;<br>
+		&lt;form action="tabgenerator.php" method="POST"&gt;<br>
+			&lt;fieldset&gt;<br>
+			&lt;legend&gt;Search for a guitar tab!&lt;/legend&gt;<br>
+				&lt;div&gt;<br>
+					&lt;p&gt;Artist:<br>
+						&lt;input type="text" id="artist" name="artist"&gt;<br>
+					&lt;/p&gt;<br>
+				&lt;/div&gt;<br>
+				&lt;div&gt;<br>
+					&lt;p&gt;Song Name:<br>
+						&lt;input type="text" id="song" name="song"&gt;<br>
+					&lt;/p&gt;<br>
+				&lt;/div&gt;<br>
+				&lt;div&gt;<br>
+					&lt;p&gt;Maximum Tabs on Page:<br>
+						&lt;select name="perpage"&gt;<br>
+							&lt;option value ='50'&gt;50&lt;/option&gt;<br>
+							&lt;option value ='100'&gt;100&lt;/option&gt;<br>
+							&lt;option value ='250'&gt;250&lt;/option&gt;<br>
+							&lt;option value ='500'&gt;500&lt;/option&gt;<br>
+						&lt;/select&gt;&lt;br&gt;<br>
+					&lt;/p&gt;<br>
+				&lt;/div&gt;<br>
+			&lt;/fieldset&gt;<br>
+							&lt;input type="submit" name="search" value="Submit"&gt;<br>
+	&lt;/form&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</p>
+
+		<h3>Note:</h3>
+
+		<p>The important parts of this code are the value of artist, song and <br>
+		"maximum tabs on page"(perpage) portions to be sent to the PHP portion <br>
+		(via POST request), which will be explained in the next section of this documentation.  <br>
+		One thing to note is the JavaScript portion in the header of our HTML.  <br>
+		This script is there to enable opening selected guitar tabs in a new window, <br>
+		which we will cover down the line.</p>
+
+		<h2>Here is the End Result:</h2>
+		
+    <script type="text/javascript">
+                function openWin(url)
+                {
+                    window.open(url, "mywin", "menubar=0, resizable=0, width=800, height=1000")
+                }
+    </script>
+	<h2>Guitar Tab Generator</h2>
+
+		<form action="tabgenerator.php" method="POST">
+			<fieldset>
+			<h3>Search for a guitar tab!</h3>
+				<div>
+					<p>Artist:
+						<input type="text" id="artist" name="artist">
+					</p>
+				</div>
+				<div>
+					<p>Song Name:
+						<input type="text" id="song" name="song">
+					</p>
+				</div>
+				<div>
+					<p>Maximum Tabs on Page:
+						<select name="perpage">
+							<option value ='50'>50</option>
+							<option value ='100'>100</option>
+							<option value ='250'>250</option>
+							<option value ='500'>500</option>
+						</select><br>
+					</p>
+				</div>
+			</fieldset>
+	</form>
+
+		<a href="page3.html"><h2>Next: PHP Implementation: Getting Started</h2></a>
+		<a href="page1.html"><h3>Previous: Overview of this Documentation</h3></a>
+		<a href="tableofcontents.html"><h3>Table of Contents</h3></a>
+		<a href="index.html"><h3>Back to Guitar Tab Generator</h3></a>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

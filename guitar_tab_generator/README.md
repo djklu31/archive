@@ -1,0 +1,1 @@
+Generate guitar tabs for your app in XML format using the unofficial Ultimate-Guitar ‘API’ by following this simple how-to documentation.

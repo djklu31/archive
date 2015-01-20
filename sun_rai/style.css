@@ -147,6 +147,10 @@ h3 {
 	text-align: center;
 }
 
+.mail {
+	text-align: center;
+}
+
 .pcenter {
 	padding:auto;
 	margin:auto;
@@ -188,6 +192,15 @@ padding-bottom: 5px;
 	float: none;
 }*/
 
+.music {
+	text-align: center;
+}
+
+.video {
+	text-align:center;
+	width: 200;
+	height: 100;
+}
 
 
 #map-canvas {

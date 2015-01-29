@@ -58,6 +58,8 @@
 	}
 }
 
+input.input-box, textarea { color:black;}
+
 .timeline {
 	text-align:left;
 }
@@ -77,10 +79,23 @@ background: rgba(200, 54, 54, 0.5);
 	color: white;
 }
 
+#blackcolor {
+	color: white;
+}
+
 .rates {
 	width: 75%;
 	padding-top: 10px;
 	padding-bottom: 30px;
+}
+
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 22px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
 }
 
 .stylisttitle {
@@ -133,6 +148,11 @@ h1, h2, h3, h4, h5, h6, p {
 h2 {
 font-size:800%;
 text-align: center;
+}
+
+#centerform {
+	text-align: center;
+	font-family: 'Poiret One', cursive;
 }
 
 .login {
@@ -229,6 +249,7 @@ position: absolute;
   position: absolute; /* Break it out of the regular flow */
   top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
 }
+
 
 
 .displayed {

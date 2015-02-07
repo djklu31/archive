@@ -1,0 +1,1 @@
+A game programmed in C similar to the Colossal Cave Adventure game. All of the rooms and the connections to other rooms are randomized, written to a text file, and read back from the text file to process the game.

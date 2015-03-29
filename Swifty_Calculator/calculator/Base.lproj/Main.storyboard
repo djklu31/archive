@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Image" id="yaU-tb-3W2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calculate" id="inw-kz-VtN">
+                                <rect key="frame" x="30" y="40" width="260" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oPl-Mz-7Ta">
+                                <rect key="frame" x="30" y="140" width="69" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1" image="Image-1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 1"/>
+                                <connections>
+                                    <action selector="numbersInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="C4t-z3-dkj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Id-eV-kgs">
+                                <rect key="frame" x="126" y="140" width="69" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2" image="Image-2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 2"/>
+                                <connections>
+                                    <action selector="numbersInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KhG-oi-6fO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d3m-fg-W8f">
+                                <rect key="frame" x="216" y="140" width="68" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="3" image="Image-3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 3"/>
+                                <connections>
+                                    <action selector="numbersInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="duf-qh-FAW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1tu-mG-WuK">
+                                <rect key="frame" x="30" y="228" width="69" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="4" image="Image-4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 4"/>
+                                <connections>
+                                    <action selector="numbersInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Z3-3p-hq6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K9f-L0-PpL">
+                                <rect key="frame" x="126" y="228" width="68" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="5" image="Image-5">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 5"/>
+                                <connections>
+                                    <action selector="numbersInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3kH-DW-Iu3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qAa-Xw-9VW">
+                                <rect key="frame" x="216" y="228" width="68" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="6" image="Image-6">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 6"/>
+                                <connections>
+                                    <action selector="numbersInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PfD-l4-8h2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kwE-jW-1NM">
+                                <rect key="frame" x="30" y="316" width="70" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="7" image="Image-7">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 7"/>
+                                <connections>
+                                    <action selector="numbersInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sYo-LS-kzJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6OS-Pp-hPj">
+                                <rect key="frame" x="216" y="316" width="68" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="9" image="Image-9">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 9"/>
+                                <connections>
+                                    <action selector="numbersInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jUB-go-jgG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H6s-Vx-naz">
+                                <rect key="frame" x="126" y="402" width="69" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0" image="Image-0">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 10"/>
+                                <connections>
+                                    <action selector="numbersInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uGT-Eh-dpC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JgX-b0-pTe">
+                                <rect key="frame" x="101" y="496" width="51" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="x" image="Image-x">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 15"/>
+                                <connections>
+                                    <action selector="multiply:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="La4-iU-tFB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sCZ-Tf-ELR">
+                                <rect key="frame" x="169" y="496" width="54" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="-" image="Image--">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 14"/>
+                                <connections>
+                                    <action selector="subtract:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xvW-2k-zhy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yaN-k5-YdD">
+                                <rect key="frame" x="31" y="402" width="69" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="C" image="Image-C">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 11"/>
+                                <connections>
+                                    <action selector="clear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rIz-Ig-Sn8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dKx-gE-peu">
+                                <rect key="frame" x="31" y="496" width="51" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="+" image="Image-+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 13"/>
+                                <connections>
+                                    <action selector="add:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Wfu-kC-DCl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wdW-Gj-O6x">
+                                <rect key="frame" x="216" y="402" width="68" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="=" image="Image-=">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 12"/>
+                                <connections>
+                                    <action selector="equalSign:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="btd-Cy-4p4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JXl-s3-80j">
+                                <rect key="frame" x="126" y="316" width="68" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="8" image="Image-8">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 8"/>
+                                <connections>
+                                    <action selector="numbersInput:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z2u-FR-qMa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qMK-Lb-0Hr">
+                                <rect key="frame" x="237" y="496" width="53" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="/" image="Image-divide">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Rectangle 1 + 16"/>
+                                <connections>
+                                    <action selector="divide:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7C1-6c-oLK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="jF4-Jl-Lfe">
+                                <rect key="frame" x="30" y="96" width="260" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="calcField" destination="jF4-Jl-Lfe" id="Qvj-n2-dbS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="372"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background Image" width="455" height="599"/>
+        <image name="Calculate" width="260" height="37"/>
+        <image name="Image-+" width="50" height="42"/>
+        <image name="Image--" width="50" height="42"/>
+        <image name="Image-0" width="68" height="71"/>
+        <image name="Image-1" width="68" height="71"/>
+        <image name="Image-2" width="68" height="71"/>
+        <image name="Image-3" width="68" height="71"/>
+        <image name="Image-4" width="68" height="71"/>
+        <image name="Image-5" width="68" height="71"/>
+        <image name="Image-6" width="68" height="71"/>
+        <image name="Image-7" width="68" height="71"/>
+        <image name="Image-8" width="68" height="71"/>
+        <image name="Image-9" width="68" height="71"/>
+        <image name="Image-=" width="68" height="71"/>
+        <image name="Image-C" width="68" height="71"/>
+        <image name="Image-divide" width="50" height="42"/>
+        <image name="Image-x" width="50" height="42"/>
+        <image name="Rectangle 1 + 1" width="68" height="71"/>
+        <image name="Rectangle 1 + 10" width="68" height="71"/>
+        <image name="Rectangle 1 + 11" width="68" height="71"/>
+        <image name="Rectangle 1 + 12" width="68" height="71"/>
+        <image name="Rectangle 1 + 13" width="100" height="84"/>
+        <image name="Rectangle 1 + 14" width="100" height="84"/>
+        <image name="Rectangle 1 + 15" width="100" height="84"/>
+        <image name="Rectangle 1 + 16" width="100" height="84"/>
+        <image name="Rectangle 1 + 2" width="68" height="71"/>
+        <image name="Rectangle 1 + 3" width="68" height="71"/>
+        <image name="Rectangle 1 + 4" width="68" height="71"/>
+        <image name="Rectangle 1 + 8" width="68" height="71"/>
+        <image name="Rectangle 1 + 9" width="68" height="71"/>
+        <image name="Rectangle 5" width="68" height="71"/>
+        <image name="Rectangle 6" width="68" height="71"/>
+        <image name="Rectangle 7" width="68" height="71"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
